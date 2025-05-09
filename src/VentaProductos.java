@@ -7,12 +7,12 @@
  *
  * @author ctoro
  */
-public class pagina2 extends javax.swing.JPanel {
+public class VentaProductos extends javax.swing.JPanel {
 
     /**
      * Creates new form pagina2
      */
-    public pagina2() {
+    public VentaProductos() {
         initComponents();
     }
 

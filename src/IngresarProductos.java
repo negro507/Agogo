@@ -3,18 +3,11 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.swing.table.DefaultTableModel;
 
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
- */
 
-/**
- *
- * @author ctoro
- */
-public class pagina1 extends javax.swing.JPanel {
+public class IngresarProductos extends javax.swing.JPanel {
     public static List<Productos> productos = new ArrayList<>();
     
+    //Variable que me almacena el id del producto en un contadorID "Variable Global"
     int contadorID = 1;
     
     // linea para acceder al modelo de la tabla (Mantener los datos cargados de la tabla
@@ -25,7 +18,7 @@ public class pagina1 extends javax.swing.JPanel {
     /**
      * Creates new form pagina1
      */
-    public pagina1() {
+    public IngresarProductos() {
         initComponents();
         
         //esto es para definir la forma de como se va a mostrar la tabla 
@@ -33,6 +26,7 @@ public class pagina1 extends javax.swing.JPanel {
         
         mt.setColumnIdentifiers(id);
         
+        //Linea para inicializar la tabla y sus datos
         jTable1.setModel(mt);
 
         
@@ -180,10 +174,12 @@ public class pagina1 extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    // Metodo para ingresar productos a la tabla
     private void btnanadirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnanadirActionPerformed
     int id = contadorID;
     contadorID++; // Incrementa para el siguiente producto
 
+    //Obtener los valores del textfield (Valores de la tabla)
     String pNombre = etnombre.getText();
     double valor = Double.valueOf(etvalor.getText());
     int pCantidad = Integer.valueOf(etcantidad.getText());
@@ -215,11 +211,12 @@ public class pagina1 extends javax.swing.JPanel {
     
     }//GEN-LAST:event_btnanadirActionPerformed
 
-    
+    //Borra un dato de la tabla
     private void btnborrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnborrarActionPerformed
         mt.removeRow(jTable1.getSelectedRow());
     }//GEN-LAST:event_btnborrarActionPerformed
 
+    //Actualizar un dato de la tabla
     private void btnactualizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnactualizarActionPerformed
     mt.setValueAt(etnombre.getText(), jTable1.getSelectedRow(), 1);
     mt.setValueAt(etvalor.getText(), jTable1.getSelectedRow(), 2);

@@ -7,12 +7,12 @@
  *
  * @author ctoro
  */
-public class pagina3 extends javax.swing.JPanel {
+public class BuscarProductos extends javax.swing.JPanel {
 
     /**
      * Creates new form pagina3
      */
-    public pagina3() {
+    public BuscarProductos() {
         initComponents();
     }
 
