@@ -1,11 +1,14 @@
 
 import java.util.ArrayList;
 import java.util.List;
+import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
 
 public class IngresarProductos extends javax.swing.JPanel {
     public static List<Productos> productos = new ArrayList<>();
+    
+    
     
     //Variable que me almacena el id del producto en un contadorID "Variable Global"
     int contadorID = 1;
@@ -174,6 +177,9 @@ public class IngresarProductos extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    
+    
+    
     // Metodo para ingresar productos a la tabla
     private void btnanadirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnanadirActionPerformed
     int id = contadorID;
@@ -185,7 +191,7 @@ public class IngresarProductos extends javax.swing.JPanel {
     int pCantidad = Integer.valueOf(etcantidad.getText());
 
     // Cálculo de la ganancia (precio + 5%)
-    double ganancia = valor + (valor * 0.05);
+    double ganancia = valor * pCantidad;
 
     // Agregar fila a la tabla
     mt.addRow(new Object[] {id, pNombre, valor, pCantidad, ganancia});
@@ -216,7 +222,7 @@ public class IngresarProductos extends javax.swing.JPanel {
         mt.removeRow(jTable1.getSelectedRow());
     }//GEN-LAST:event_btnborrarActionPerformed
 
-    //Actualizar un dato de la tabla
+    //Actualizar un 
     private void btnactualizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnactualizarActionPerformed
     mt.setValueAt(etnombre.getText(), jTable1.getSelectedRow(), 1);
     mt.setValueAt(etvalor.getText(), jTable1.getSelectedRow(), 2);

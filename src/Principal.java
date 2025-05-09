@@ -1,6 +1,10 @@
 import java.awt.BorderLayout;
+import java.util.ArrayList;
+import java.util.List;
+import javax.swing.JOptionPane;
 
 public class Principal extends javax.swing.JFrame {
+    public static List<Productos> productos = new ArrayList<>();
 
     public Principal() {
         initComponents();
@@ -75,7 +79,7 @@ public class Principal extends javax.swing.JFrame {
         btnreportes.setBackground(new java.awt.Color(55, 65, 81));
         btnreportes.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         btnreportes.setForeground(new java.awt.Color(255, 255, 255));
-        btnreportes.setText("Reportes");
+        btnreportes.setText("Buscar Productos");
         btnreportes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnreportesActionPerformed(evt);
@@ -151,6 +155,20 @@ public class Principal extends javax.swing.JFrame {
 
     private void btnproductosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnproductosActionPerformed
         mostrarPanel(new IngresarProductos());
+        
+        /*boolean lleno = true;
+
+        for (Productos p : productos) {
+            if (p == null) {
+                lleno = false;
+                break;
+            }
+        }
+            if (lleno) {
+                JOptionPane.showMessageDialog(null, "El arreglo de productos está lleno.");
+            }else{
+                JOptionPane.showMessageDialog(null, "Aún hay espacios vacíos en el arreglo.");
+            }  */
     }//GEN-LAST:event_btnproductosActionPerformed
 
     private void btnreportesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnreportesActionPerformed

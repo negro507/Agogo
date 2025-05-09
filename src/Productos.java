@@ -17,7 +17,7 @@ public class Productos {
         this.nombre = nombre;
         this.valorCompra = valorCompra;
         this.cantidad = cantidad;
-        this.ganancia = valorCompra + (valorCompra * 0.05);  // Calculamos la ganancia
+        this.ganancia = ganancia;  // Calculamos la ganancia
     }
 
     // Métodos getter y setter
