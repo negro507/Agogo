@@ -1,4 +1,6 @@
 
+//Clase creada para guardar los datos y la informacion de la tabla sin que se borren.
+
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.table.DefaultTableModel;

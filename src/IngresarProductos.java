@@ -27,6 +27,7 @@ public class IngresarProductos extends javax.swing.JPanel {
         //esto es para definir la forma de como se va a mostrar la tabla 
         String[] id = {"ID","Nombre","Valor Compra","Cantidad (Stock)","Valor Venta"};
         
+        //Ingresar el id en la tabla (Primary key)
         mt.setColumnIdentifiers(id);
         
         //Linea para inicializar la tabla y sus datos

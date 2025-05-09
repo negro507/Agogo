@@ -53,10 +53,10 @@
                                   <Component id="buscar" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          <EmptySpace min="0" pref="253" max="32767" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace min="0" pref="25" max="32767" attributes="0"/>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                           <Component id="productobuscado" min="-2" pref="709" max="-2" attributes="0"/>
                       </Group>
                   </Group>
@@ -75,9 +75,9 @@
                       <Component id="buscarp" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="buscar" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
                   <Component id="productobuscado" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="349" max="32767" attributes="0"/>
+                  <EmptySpace pref="348" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>

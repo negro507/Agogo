@@ -66,9 +66,9 @@ public class BuscarProductos extends javax.swing.JPanel {
                                 .addComponent(buscarp, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(35, 35, 35)
                                 .addComponent(buscar)))
-                        .addGap(0, 0, Short.MAX_VALUE))
+                        .addGap(0, 253, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, p3Layout.createSequentialGroup()
-                        .addGap(0, 25, Short.MAX_VALUE)
+                        .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(productobuscado, javax.swing.GroupLayout.PREFERRED_SIZE, 709, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
@@ -82,9 +82,9 @@ public class BuscarProductos extends javax.swing.JPanel {
                     .addComponent(jLabel2)
                     .addComponent(buscarp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(buscar))
-                .addGap(69, 69, 69)
+                .addGap(70, 70, 70)
                 .addComponent(productobuscado)
-                .addContainerGap(349, Short.MAX_VALUE))
+                .addContainerGap(348, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -104,7 +104,7 @@ public class BuscarProductos extends javax.swing.JPanel {
         try {
             //Obtener el valor del campo del id
         int idBuscado = Integer.parseInt(buscarp.getText()); // Obtener el ID ingresado
-
+        //Variable creada para retornar si existe o no existe el producto "True o false"
         boolean encontrado = false;
         for (Productos p : IngresarProductos.productos) { // Accedemos a la lista desde IngresarProductos
             if (p.getId() == idBuscado) {
